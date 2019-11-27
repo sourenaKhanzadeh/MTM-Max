@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="434aa53d-6d37-42b8-aae2-b91516c560f0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/sign_up.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Movie.py" afterPath="$PROJECT_DIR$/Movie.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/header.html" afterPath="$PROJECT_DIR$/templates/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/homepage.html" afterPath="$PROJECT_DIR$/templates/homepage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database.py" afterPath="$PROJECT_DIR$/database.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/sign_up.html" afterPath="$PROJECT_DIR$/templates/sign_up.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,7 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Movie$Movie.coverage" NAME="Movie Coverage Results" MODIFIED="1574820402058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Movie$Movie.coverage" NAME="Movie Coverage Results" MODIFIED="1574884736411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Movie$database.coverage" NAME="database Coverage Results" MODIFIED="1574818819559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
@@ -34,12 +32,12 @@
     <favorites_list name="Movie" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Movie.py" pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Movie.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Movie.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+            <state relative-caret-position="416">
+              <caret line="26" column="33" lean-forward="true" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -47,24 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sign_up.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sign_up.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/sign_up.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-              <folding>
-                <element signature="e#87#113#0#HTML" expanded="true" />
-                <element signature="e#182#205#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/header.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+            <state relative-caret-position="496">
+              <caret line="31" column="12" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -73,25 +58,25 @@
       <file leaf-file-name="database.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="85" column="7" lean-forward="false" selection-start-line="85" selection-start-column="7" selection-end-line="85" selection-end-column="7" />
+            <state relative-caret-position="36">
+              <caret line="104" column="20" lean-forward="false" selection-start-line="104" selection-start-column="20" selection-end-line="104" selection-end-column="20" />
               <folding>
-                <marker date="1574820402026" expanded="true" signature="348:568" ph="CREATE TABLE... movie_user" />
-                <marker date="1574820402026" expanded="true" signature="348:3084" ph="CREATE TABLE... movie_user" />
-                <marker date="1574820402026" expanded="true" signature="595:672" ph="CREATE TABLE... admin" />
-                <marker date="1574820402026" expanded="true" signature="595:673" ph="CREATE TABLE... admin" />
-                <marker date="1574820402026" expanded="true" signature="697:780" ph="CREATE TABLE... customer" />
-                <marker date="1574820402026" expanded="true" signature="697:781" ph="CREATE TABLE... customer" />
-                <marker date="1574820402026" expanded="true" signature="697:783" ph="CREATE TABLE... customer" />
-                <marker date="1574820402026" expanded="true" signature="812:1144" ph="CREATE TABLE... product" />
-                <marker date="1574820402026" expanded="true" signature="1182:1399" ph="CREATE TABLE... movie" />
-                <marker date="1574820402026" expanded="true" signature="1437:1566" ph="CREATE TABLE... music" />
-                <marker date="1574820402026" expanded="true" signature="1604:1800" ph="CREATE TABLE... tvseries" />
-                <marker date="1574820402026" expanded="true" signature="1838:2048" ph="CREATE TABLE... seasons" />
-                <marker date="1574820402026" expanded="true" signature="2086:2312" ph="CREATE TABLE... subscription" />
-                <marker date="1574820402026" expanded="true" signature="2350:2512" ph="CREATE TABLE... streams" />
-                <marker date="1574820402026" expanded="true" signature="2550:2754" ph="CREATE TABLE... manages" />
-                <marker date="1574820402026" expanded="true" signature="2792:3044" ph="CREATE TABLE... purchases" />
+                <element signature="e#0#22#0" expanded="true" />
+                <marker date="1574886101607" expanded="true" signature="362:582" ph="CREATE TABLE... movie_user" />
+                <marker date="1574886101607" expanded="true" signature="609:687" ph="CREATE TABLE... admin" />
+                <marker date="1574886101607" expanded="true" signature="711:795" ph="CREATE TABLE... customer" />
+                <marker date="1574886101607" expanded="true" signature="826:1158" ph="CREATE TABLE... product" />
+                <marker date="1574886101607" expanded="true" signature="1196:1413" ph="CREATE TABLE... movie" />
+                <marker date="1574886101607" expanded="true" signature="1451:1580" ph="CREATE TABLE... music" />
+                <marker date="1574886101607" expanded="true" signature="1618:1814" ph="CREATE TABLE... tvseries" />
+                <marker date="1574886101607" expanded="true" signature="1852:2062" ph="CREATE TABLE... seasons" />
+                <marker date="1574886101607" expanded="true" signature="2100:2326" ph="CREATE TABLE... subscription" />
+                <marker date="1574886101607" expanded="true" signature="2364:2526" ph="CREATE TABLE... streams" />
+                <marker date="1574886101607" expanded="true" signature="2564:2768" ph="CREATE TABLE... manages" />
+                <marker date="1574886101607" expanded="true" signature="2806:3058" ph="CREATE TABLE... purchases" />
+                <marker date="1574886101607" expanded="true" signature="3273:3376" ph="INSERT INTO movie_user... " />
+                <marker date="1574886101607" expanded="true" signature="3503:3539" ph="INSERT INTO admin... " />
+                <marker date="1574886101607" expanded="true" signature="3622:3664" ph="INSERT INTO customer... " />
               </folding>
             </state>
           </provider>
@@ -101,11 +86,8 @@
         <entry file="file://$PROJECT_DIR$/templates/homepage.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="256">
-              <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-              <folding>
-                <element signature="n#style#0;n#h3#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+              <caret line="16" column="10" lean-forward="false" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -139,11 +121,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database.py" />
         <option value="$PROJECT_DIR$/templates/header.html" />
         <option value="$PROJECT_DIR$/templates/homepage.html" />
-        <option value="$PROJECT_DIR$/Movie.py" />
         <option value="$PROJECT_DIR$/templates/sign_up.html" />
+        <option value="$PROJECT_DIR$/database.py" />
+        <option value="$PROJECT_DIR$/Movie.py" />
       </list>
     </option>
   </component>
@@ -362,6 +344,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -462,24 +450,24 @@
     <frame x="-5" y="2" width="979" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21653971" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1787649" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21218716" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -494,11 +482,69 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Movie.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="20" column="23" lean-forward="false" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="85" column="7" lean-forward="false" selection-start-line="85" selection-start-column="7" selection-end-line="85" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+            <marker date="1574886101607" expanded="true" signature="362:582" ph="CREATE TABLE... movie_user" />
+            <marker date="1574886101607" expanded="true" signature="609:687" ph="CREATE TABLE... admin" />
+            <marker date="1574886101607" expanded="true" signature="711:795" ph="CREATE TABLE... customer" />
+            <marker date="1574886101607" expanded="true" signature="826:1158" ph="CREATE TABLE... product" />
+            <marker date="1574886101607" expanded="true" signature="1196:1413" ph="CREATE TABLE... movie" />
+            <marker date="1574886101607" expanded="true" signature="1451:1580" ph="CREATE TABLE... music" />
+            <marker date="1574886101607" expanded="true" signature="1618:1814" ph="CREATE TABLE... tvseries" />
+            <marker date="1574886101607" expanded="true" signature="1852:2062" ph="CREATE TABLE... seasons" />
+            <marker date="1574886101607" expanded="true" signature="2100:2326" ph="CREATE TABLE... subscription" />
+            <marker date="1574886101607" expanded="true" signature="2364:2526" ph="CREATE TABLE... streams" />
+            <marker date="1574886101607" expanded="true" signature="2564:2768" ph="CREATE TABLE... manages" />
+            <marker date="1574886101607" expanded="true" signature="2806:3058" ph="CREATE TABLE... purchases" />
+            <marker date="1574886101607" expanded="true" signature="3273:3376" ph="INSERT INTO movie_user... " />
+            <marker date="1574886101607" expanded="true" signature="3503:3539" ph="INSERT INTO admin... " />
+            <marker date="1574886101607" expanded="true" signature="3622:3664" ph="INSERT INTO customer... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/homepage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sign_up.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/_collections_abc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="656" column="8" lean-forward="false" selection-start-line="656" selection-start-column="8" selection-end-line="656" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -522,7 +568,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="482">
           <caret line="190" column="0" lean-forward="false" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -530,7 +575,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -558,27 +602,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sign_up.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="31" column="12" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/database.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="85" column="7" lean-forward="false" selection-start-line="85" selection-start-column="7" selection-end-line="85" selection-end-column="7" />
+        <state relative-caret-position="36">
+          <caret line="104" column="20" lean-forward="false" selection-start-line="104" selection-start-column="20" selection-end-line="104" selection-end-column="20" />
           <folding>
-            <marker date="1574820402026" expanded="true" signature="348:568" ph="CREATE TABLE... movie_user" />
-            <marker date="1574820402026" expanded="true" signature="348:3084" ph="CREATE TABLE... movie_user" />
-            <marker date="1574820402026" expanded="true" signature="595:672" ph="CREATE TABLE... admin" />
-            <marker date="1574820402026" expanded="true" signature="595:673" ph="CREATE TABLE... admin" />
-            <marker date="1574820402026" expanded="true" signature="697:780" ph="CREATE TABLE... customer" />
-            <marker date="1574820402026" expanded="true" signature="697:781" ph="CREATE TABLE... customer" />
-            <marker date="1574820402026" expanded="true" signature="697:783" ph="CREATE TABLE... customer" />
-            <marker date="1574820402026" expanded="true" signature="812:1144" ph="CREATE TABLE... product" />
-            <marker date="1574820402026" expanded="true" signature="1182:1399" ph="CREATE TABLE... movie" />
-            <marker date="1574820402026" expanded="true" signature="1437:1566" ph="CREATE TABLE... music" />
-            <marker date="1574820402026" expanded="true" signature="1604:1800" ph="CREATE TABLE... tvseries" />
-            <marker date="1574820402026" expanded="true" signature="1838:2048" ph="CREATE TABLE... seasons" />
-            <marker date="1574820402026" expanded="true" signature="2086:2312" ph="CREATE TABLE... subscription" />
-            <marker date="1574820402026" expanded="true" signature="2350:2512" ph="CREATE TABLE... streams" />
-            <marker date="1574820402026" expanded="true" signature="2550:2754" ph="CREATE TABLE... manages" />
-            <marker date="1574820402026" expanded="true" signature="2792:3044" ph="CREATE TABLE... purchases" />
+            <element signature="e#0#22#0" expanded="true" />
+            <marker date="1574886101607" expanded="true" signature="362:582" ph="CREATE TABLE... movie_user" />
+            <marker date="1574886101607" expanded="true" signature="609:687" ph="CREATE TABLE... admin" />
+            <marker date="1574886101607" expanded="true" signature="711:795" ph="CREATE TABLE... customer" />
+            <marker date="1574886101607" expanded="true" signature="826:1158" ph="CREATE TABLE... product" />
+            <marker date="1574886101607" expanded="true" signature="1196:1413" ph="CREATE TABLE... movie" />
+            <marker date="1574886101607" expanded="true" signature="1451:1580" ph="CREATE TABLE... music" />
+            <marker date="1574886101607" expanded="true" signature="1618:1814" ph="CREATE TABLE... tvseries" />
+            <marker date="1574886101607" expanded="true" signature="1852:2062" ph="CREATE TABLE... seasons" />
+            <marker date="1574886101607" expanded="true" signature="2100:2326" ph="CREATE TABLE... subscription" />
+            <marker date="1574886101607" expanded="true" signature="2364:2526" ph="CREATE TABLE... streams" />
+            <marker date="1574886101607" expanded="true" signature="2564:2768" ph="CREATE TABLE... manages" />
+            <marker date="1574886101607" expanded="true" signature="2806:3058" ph="CREATE TABLE... purchases" />
+            <marker date="1574886101607" expanded="true" signature="3273:3376" ph="INSERT INTO movie_user... " />
+            <marker date="1574886101607" expanded="true" signature="3503:3539" ph="INSERT INTO admin... " />
+            <marker date="1574886101607" expanded="true" signature="3622:3664" ph="INSERT INTO customer... " />
           </folding>
         </state>
       </provider>
@@ -586,31 +638,17 @@
     <entry file="file://$PROJECT_DIR$/templates/homepage.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
-          <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-          <folding>
-            <element signature="n#style#0;n#h3#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+          <caret line="16" column="10" lean-forward="false" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Movie.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+        <state relative-caret-position="416">
+          <caret line="26" column="33" lean-forward="true" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/sign_up.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-          <folding>
-            <element signature="e#87#113#0#HTML" expanded="true" />
-            <element signature="e#182#205#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

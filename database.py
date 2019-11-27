@@ -1,4 +1,5 @@
 import mysql.connector
+import random
 
 db = mysql.connector.connect(
     host="localhost",
@@ -119,3 +120,22 @@ if len(tables) == 0:
     print("Tables Created...")
 else:
     print("Tables Already Exist...")
+
+
+
+def insertUser(fname, lname, email, username,**kwargs):
+    user_id = random.randint(10000, 9999999)
+    cursor.execute("""
+    INSERT INTO movie_user(UserID, FirstName, LastName, Email, Username)
+    VALUES({},'{}','{}','{}','{}')
+    """.format(user_id, fname, lname, email, username))
+    if kwargs.get('admin', False):
+        cursor.execute("""
+        INSERT INTO admin(AdminID)VALUES({})
+        """.format(user_id))
+    else:
+        cursor.execute("""
+                INSERT INTO customer(CustomerID)VALUES({})
+                """.format(user_id))
+
+    db.commit()
