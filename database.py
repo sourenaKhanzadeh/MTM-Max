@@ -139,3 +139,16 @@ def insertUser(fname, lname, email, username,**kwargs):
                 """.format(user_id))
 
     db.commit()
+
+
+def checkUserExists(userId):
+    cursor.execute("""
+         SELECT EXISTS(SELECT * FROM movie_user WHERE 
+         UserID=(SELECT UserID FROM movie_user WHERE Username='{0}')) AS 'Users', 
+         EXISTS(SELECT * FROM admin WHERE 
+         AdminID=(SELECT UserID FROM movie_user WHERE Username='{0}')) AS 'Admin', 
+         EXISTS(SELECT * FROM customer WHERE 
+         CustomerID=(SELECT UserID FROM movie_user WHERE Username='{0}')) AS 'Customer' 
+    """.format(userId))
+
+    return cursor.fetchone()

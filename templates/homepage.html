@@ -1,36 +1,109 @@
 {% extends 'header.html' %}
 
 {% block body%}
-    <h3 class="ui center aligned header" style="margin-top: 100px">Welcome</h3>
-       <div class="ui text container">
-               <div class="menu ui segments">
-                    <div id="admin" class="ui red button segment">Create Admin</div>
-                    <div id="user" class="ui secondary button segment">Create User</div>
-                   <form method="post" style="padding: 10px">
-                       <label for="user">
-                            username:
-                           <input type="text" name="user" class="ui segment">
-                       </label>
-                       <input type="submit" class="ui button segment" value="Log-in">
-                   </form>
-               </div>
-       </div>
-{% endblock %}
-
-{% block script %}
-    <script>
-        let admin = document.getElementById("admin"),
-            user = document.getElementById("user");
-
-        // admin is clicked
-        admin.addEventListener('click', ()=>{
-            window.location = '/create/admin';
-        });
 
 
-        // user is clicked
-        user.addEventListener('click', ()=>{
-            window.location = '/create/user';
-        });
-    </script>
+    <div class="pusher">
+  <div class="ui inverted vertical masthead center aligned segment">
+
+    <div class="ui container">
+      <div class="ui large secondary inverted pointing menu">
+        <a class="toc item">
+          <i class="sidebar icon"></i>
+        </a>
+        <a class="active item">Welcome, {{ user }}</a>
+          {% if admin %}
+            <a href="{{ user }}/admin" class="item">Admin</a>
+          {% endif %}
+          <div class="right menu">
+              <a href="/" class="item">Logout<i class="power off icon"></i></a>
+          </div>
+      </div>
+    </div>
+
+    <div class="ui text container">
+      <h1 class="ui inverted header">
+        MTM Max
+      </h1>
+      <h2>Watch any movie/music/series any time</h2>
+      <div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>
+    </div>
+
+  </div>
+
+  <div class="ui vertical stripe segment">
+    <div class="ui middle aligned stackable grid container">
+      <div class="row">
+        <div class="eight wide column">
+          <h3 class="ui header">WATCH FULL MOVIES ONLINE</h3>
+          <p>We would like to greet you on our movie streaming site - Moviewatcher!
+              Here you will be able to watch all movies and TV series
+              online absolutely for free without signing up.
+              Moviewatcher updates its database daily
+              and you will be able to stream videos
+              only in best HD quality: 720p or 1080p.
+              You can also download the movies
+              to your PC and watch them without a need to stream.</p>
+          <h3 class="ui header">Films/TvSeries/Music and more</h3>
+          <p>For those of us looking to discover something different,
+              Films has over 2,000 movies,
+              TV show episodes,
+              eye-opening documentaries and exclusive original
+              comedy shorts. There is something to watch for everyone!.</p>
+        </div>
+        <div class="six wide right floated column">
+          <img src="/static/Best_of_2009.jpg" class="ui large bordered rounded image">
+        </div>
+      </div>
+      <div class="row">
+        <div class="center aligned column">
+          <a class="ui huge button">Check Them Out</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="ui vertical stripe quote segment">
+    <div class="ui equal width stackable internally celled grid">
+      <div class="center aligned row">
+        <div class="column">
+          <h3>"About Us"</h3>
+          <p>If you’re a kind of person who loves to watch TV shows and series on the go, then this article is for you. You may know about some of the online TV streaming services but who knows if they are the best or still you’re missing something which you must know. An Online TV Streaming website not just allows you to watch episodes of your
+              favorite serials at your leisure, it also saves you from missing episodes. You can watch any of your favorite TV show sitting anywhere without having to pay a penny for that. The streaming is made easy with the introduction of some cool website where you get this service for free. You get the freedom to stream and watch your favorite TV programs on their schedule.</p>
+        </div>
+        <div class="column">
+          <h3>"Enjoy"</h3>
+          <p>
+            <img src="/static/poster.jpg" class="ui image">
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="ui inverted vertical footer segment">
+    <div class="ui container">
+      <div class="ui stackable inverted divided equal height stackable grid">
+        <div class="three wide column">
+          <h4 class="ui inverted header">About</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">Comming Soon</a>
+          </div>
+        </div>
+        <div class="three wide column">
+          <h4 class="ui inverted header">Services</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">Comming Soon</a>
+          </div>
+        </div>
+        <div class="seven wide column">
+          <h4 class="ui inverted header">Movie Max</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 {% endblock %}
