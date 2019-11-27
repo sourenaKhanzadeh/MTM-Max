@@ -1,5 +1,17 @@
 {% extends 'header.html' %}
 
 {% block body%}
-    <h1>Hello World</h1>
+    <h3 class="ui center aligned header" style="margin-top: 100px">Welcome</h3>
+       <div class="ui text container">
+               <div class="menu ui segments">
+                    <div class="ui primary button segment">Sign up</div>
+                   <form method="post" style="padding: 10px">
+                       <label for="user">
+                            username:
+                           <input type="text" name="user" class="ui segment">
+                       </label>
+                       <input type="submit" class="ui button segment" value="Log-in">
+                   </form>
+               </div>
+       </div>
 {% endblock %}

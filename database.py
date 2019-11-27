@@ -117,3 +117,5 @@ if len(tables) == 0:
     )
     """)
     print("Tables Created...")
+else:
+    print("Tables Already Exist...")

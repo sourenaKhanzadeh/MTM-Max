@@ -1,5 +1,6 @@
 from flask import Flask
 from flask import render_template
+from database import cursor,db
 
 app = Flask(__name__)
 
@@ -11,3 +12,6 @@ def hello_world():
 
 if __name__ == '__main__':
     app.run(debug=True)
+    cursor.close()
+    db.close()
+
