@@ -4,7 +4,8 @@
     <h3 class="ui center aligned header" style="margin-top: 100px">Welcome</h3>
        <div class="ui text container">
                <div class="menu ui segments">
-                    <div class="ui primary button segment">Sign up</div>
+                    <div id="admin" class="ui red button segment">Create Admin</div>
+                    <div id="user" class="ui secondary button segment">Create User</div>
                    <form method="post" style="padding: 10px">
                        <label for="user">
                             username:
@@ -14,4 +15,22 @@
                    </form>
                </div>
        </div>
+{% endblock %}
+
+{% block script %}
+    <script>
+        let admin = document.getElementById("admin"),
+            user = document.getElementById("user");
+
+        // admin is clicked
+        admin.addEventListener('click', ()=>{
+            window.location = '/create/admin';
+        });
+
+
+        // user is clicked
+        user.addEventListener('click', ()=>{
+            window.location = '/create/user';
+        });
+    </script>
 {% endblock %}
