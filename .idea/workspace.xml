@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="434aa53d-6d37-42b8-aae2-b91516c560f0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database.py" afterPath="$PROJECT_DIR$/database.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,7 +13,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Movie$Movie.coverage" NAME="Movie Coverage Results" MODIFIED="1574812109212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/Movie$database.coverage" NAME="database Coverage Results" MODIFIED="1574818118042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Movie$database.coverage" NAME="database Coverage Results" MODIFIED="1574818819559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -57,11 +55,25 @@
       <file leaf-file-name="database.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/database.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="31" column="4" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+            <state relative-caret-position="1616">
+              <caret line="104" column="59" lean-forward="true" selection-start-line="104" selection-start-column="59" selection-end-line="104" selection-end-column="59" />
               <folding>
-                <marker date="1574818174861" expanded="true" signature="348:568" ph="CREATE TABLE... movie_user" />
-                <marker date="1574818174861" expanded="true" signature="348:609" ph="CREATE TABLE... movie_user" />
+                <marker date="1574818819525" expanded="true" signature="348:568" ph="CREATE TABLE... movie_user" />
+                <marker date="1574818819525" expanded="true" signature="348:3084" ph="CREATE TABLE... movie_user" />
+                <marker date="1574818819525" expanded="true" signature="595:672" ph="CREATE TABLE... admin" />
+                <marker date="1574818819525" expanded="true" signature="595:673" ph="CREATE TABLE... admin" />
+                <marker date="1574818819525" expanded="true" signature="697:780" ph="CREATE TABLE... customer" />
+                <marker date="1574818819525" expanded="true" signature="697:781" ph="CREATE TABLE... customer" />
+                <marker date="1574818819525" expanded="true" signature="697:783" ph="CREATE TABLE... customer" />
+                <marker date="1574818819525" expanded="true" signature="812:1144" ph="CREATE TABLE... product" />
+                <marker date="1574818819525" expanded="true" signature="1182:1399" ph="CREATE TABLE... movie" />
+                <marker date="1574818819525" expanded="true" signature="1437:1566" ph="CREATE TABLE... music" />
+                <marker date="1574818819525" expanded="true" signature="1604:1800" ph="CREATE TABLE... tvseries" />
+                <marker date="1574818819525" expanded="true" signature="1838:2048" ph="CREATE TABLE... seasons" />
+                <marker date="1574818819525" expanded="true" signature="2086:2312" ph="CREATE TABLE... subscription" />
+                <marker date="1574818819525" expanded="true" signature="2350:2512" ph="CREATE TABLE... streams" />
+                <marker date="1574818819525" expanded="true" signature="2550:2754" ph="CREATE TABLE... manages" />
+                <marker date="1574818819525" expanded="true" signature="2792:3044" ph="CREATE TABLE... purchases" />
               </folding>
             </state>
           </provider>
@@ -91,7 +103,14 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>debug</find>
+      <find>VARCHAR2</find>
+      <find>d</find>
+      <find>NUMBER</find>
     </findStrings>
+    <replaceStrings>
+      <replace>FLOAT</replace>
+      <replace>INTEGER</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -529,19 +548,33 @@
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/mysql/connector/connection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="1128" column="0" lean-forward="false" selection-start-line="1128" selection-start-column="0" selection-end-line="1128" selection-end-column="0" />
+        <state relative-caret-position="198">
+          <caret line="438" column="0" lean-forward="false" selection-start-line="438" selection-start-column="0" selection-end-line="438" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="31" column="4" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+        <state relative-caret-position="1616">
+          <caret line="104" column="59" lean-forward="true" selection-start-line="104" selection-start-column="59" selection-end-line="104" selection-end-column="59" />
           <folding>
-            <marker date="1574818174861" expanded="true" signature="348:568" ph="CREATE TABLE... movie_user" />
-            <marker date="1574818174861" expanded="true" signature="348:609" ph="CREATE TABLE... movie_user" />
+            <marker date="1574818819525" expanded="true" signature="348:568" ph="CREATE TABLE... movie_user" />
+            <marker date="1574818819525" expanded="true" signature="348:3084" ph="CREATE TABLE... movie_user" />
+            <marker date="1574818819525" expanded="true" signature="595:672" ph="CREATE TABLE... admin" />
+            <marker date="1574818819525" expanded="true" signature="595:673" ph="CREATE TABLE... admin" />
+            <marker date="1574818819525" expanded="true" signature="697:780" ph="CREATE TABLE... customer" />
+            <marker date="1574818819525" expanded="true" signature="697:781" ph="CREATE TABLE... customer" />
+            <marker date="1574818819525" expanded="true" signature="697:783" ph="CREATE TABLE... customer" />
+            <marker date="1574818819525" expanded="true" signature="812:1144" ph="CREATE TABLE... product" />
+            <marker date="1574818819525" expanded="true" signature="1182:1399" ph="CREATE TABLE... movie" />
+            <marker date="1574818819525" expanded="true" signature="1437:1566" ph="CREATE TABLE... music" />
+            <marker date="1574818819525" expanded="true" signature="1604:1800" ph="CREATE TABLE... tvseries" />
+            <marker date="1574818819525" expanded="true" signature="1838:2048" ph="CREATE TABLE... seasons" />
+            <marker date="1574818819525" expanded="true" signature="2086:2312" ph="CREATE TABLE... subscription" />
+            <marker date="1574818819525" expanded="true" signature="2350:2512" ph="CREATE TABLE... streams" />
+            <marker date="1574818819525" expanded="true" signature="2550:2754" ph="CREATE TABLE... manages" />
+            <marker date="1574818819525" expanded="true" signature="2792:3044" ph="CREATE TABLE... purchases" />
           </folding>
         </state>
       </provider>
