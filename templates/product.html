@@ -4,7 +4,7 @@
     {% if prod %}
     <h1>Products</h1>
     <div class="ui grid">
-    {% for _, name, __, _a , __a, ___a, _a_, rate, date, _Asd_, image  in query %}
+    {% for _, name, __, _a , __a, price, _a_, rate, date, _Asd_, image  in query %}
         <div class="four wide column">
         <div class="ui card">
           <div class="image">
@@ -16,8 +16,10 @@
               <span class="date">{{ date }}</span>
             </div>
           </div>
-            <a class="ui primary inverted button"
+            <a class="ui primary inverted small button"
                href="/{{ user }}/products/{{ name }}">view</a>
+            <a class="ui secondary inverted small button"
+               href="/{{ user }}/purchase/{{ name }}">Buy ${{ price }}</a>
           <div class="extra content">
             <a>
               <i class="star icon"></i>
