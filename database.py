@@ -56,7 +56,7 @@ if len(tables) == 0:
         MovieID INTEGER PRIMARY KEY REFERENCES product(ProductID),
         Movie_Cast VARCHAR(100),
         Languages VARCHAR(100),
-        Director VARCHAR(50),
+        Director VARCHAR(50)
     )
     """)
 
