@@ -1,0 +1,31 @@
+{% extends 'header.html' %}
+
+{% block body %}
+        <div class="ui items" style="margin: 40px">
+  <div class="item">
+    <a class="ui tiny image">
+      <img src="https://semantic-ui.com/images/avatar/large/jenny.jpg">
+    </a>
+    <div class="content">
+      <div class="description">
+    {% for i,j in prof %}
+        <p>{{ i }}: {{ j }}</p>
+    {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+    <h1>Purchase History</h1>
+    <hr>
+    {% for name, image, _ in product %}
+        <div class="ui centered card">
+      <div class="image">
+        <img src="{{ image }}">
+      </div>
+      <div class="content">
+        <a class="header">{{ name }}</a>
+      </div>
+    </div>
+    {% endfor %}
+    <h1>Total: ${{ tot }}</h1>
+{% endblock %}

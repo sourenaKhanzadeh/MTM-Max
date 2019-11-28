@@ -53,14 +53,6 @@ def product(user):
     return render_template('product.html',user=user,
                            header=True, query=cursor.fetchall(), prod=True)
 
-@app.route('/<user>/products/<product>', methods=['GET', 'POST'])
-def get_product(user, product):
-    cursor.execute("SELECT * FROM product WHERE Name='{}'".format(product))
-    p = cursor.fetchone()
-    print(p)
-    return render_template('product.html', user=user,
-                           header=True, query=p, prod=False)
-
 @app.route('/<user>/admin', methods=['GET', 'POST'])
 def login(user):
     if request.method == "GET" and checkUserExists(user)[1]:
@@ -90,8 +82,8 @@ def login(user):
             """.format(product_id))
         elif form['type'] == 't':
             cursor.execute("""
-                        INSERT INTO tvseries(SeriesID)VALUES({})
-                        """.format(product_id))
+                        INSERT INTO tvseries(SeriesID, Seasons, Episodes)VALUES(%s,%s,%s)
+                        """, (product_id, 0, 0))
         else:
             cursor.execute("""
                     INSERT INTO music(SongID)VALUES({})
@@ -107,9 +99,55 @@ def login(user):
         flash("Page does not exist", category='error')
         redirect('/')
 
+
+
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'), 'favicon.ico', mimetype='image/vnd.microsoft.icon')
+
+@app.route('/<user>/products/<product>', methods=['GET', 'POST'])
+def get_product(user, product):
+    cursor.execute("SELECT * FROM product WHERE Name='{}'".format(product))
+    p = cursor.fetchone()
+    print(p)
+    return render_template('product.html', user=user,
+                           header=True, query=p, prod=False)
+
+@app.route('/<user>/purchase/<product>', methods=['GET', 'POST'])
+def purchase(user ,product):
+    if request.method == 'GET':
+        cursor.execute("SELECT UserID FROM movie_user WHERE Username='{}'".format(user))
+        userID = cursor.fetchone()[0]
+        cursor.execute("SELECT ProductID FROM product WHERE name='{}'".format(product))
+        productID = cursor.fetchone()[0]
+        cursor.execute("""
+            INSERT INTO purchases(CustomerID,ProductID)VALUES(%s,%s)
+        """, (userID, productID))
+
+        db.commit()
+        flash("{} purchased".format(product))
+        return redirect('/{}/products/{}'.format(user, product))
+
+@app.route('/<user>', methods=['GET', 'POST'])
+def profile(user):
+    cursor.execute("SELECT * FROM movie_user WHERE Username='{}'".format(user))
+    l = ['First Name', 'Last Name', 'Email ']
+    prof = cursor.fetchone()
+    cursor.execute("""
+        SELECT Name, Image, SellPrice  
+           FROM product p, purchases pu 
+        WHERE CustomerID={} AND p.ProductID=pu.ProductID
+    """.format(prof[0]))
+    prof = prof[1:-1]
+    product = cursor.fetchall()
+    tot = list(map(lambda x:x[-1], product))
+    return render_template('profile.html',
+                           header=True,
+                           prof=list(zip(l,prof)),
+                           product=product,
+                           user=user,
+                           tot=round(sum(tot),2))
+
 
 if __name__ == '__main__':
     app.secret_key = "movie_max12xs32"
