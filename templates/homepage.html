@@ -3,33 +3,7 @@
 {% block body%}
 
 
-    <div class="pusher">
-  <div class="ui inverted vertical masthead center aligned segment">
-
-    <div class="ui container">
-      <div class="ui large secondary inverted pointing menu">
-        <a class="toc item">
-          <i class="sidebar icon"></i>
-        </a>
-        <a class="active item">Welcome, {{ user }}</a>
-          {% if admin %}
-            <a href="{{ user }}/admin" class="item">Admin</a>
-          {% endif %}
-          <div class="right menu">
-              <a href="/" class="item">Logout<i class="power off icon"></i></a>
-          </div>
-      </div>
-    </div>
-
-    <div class="ui text container">
-      <h1 class="ui inverted header">
-        MTM Max
-      </h1>
-      <h2>Watch any movie/music/series any time</h2>
-      <div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>
-    </div>
-
-  </div>
+{#    <div class="pusher">#}
 
   <div class="ui vertical stripe segment">
     <div class="ui middle aligned stackable grid container">
@@ -83,27 +57,7 @@
   </div>
 
 
-  <div class="ui inverted vertical footer segment">
-    <div class="ui container">
-      <div class="ui stackable inverted divided equal height stackable grid">
-        <div class="three wide column">
-          <h4 class="ui inverted header">About</h4>
-          <div class="ui inverted link list">
-            <a href="#" class="item">Comming Soon</a>
-          </div>
-        </div>
-        <div class="three wide column">
-          <h4 class="ui inverted header">Services</h4>
-          <div class="ui inverted link list">
-            <a href="#" class="item">Comming Soon</a>
-          </div>
-        </div>
-        <div class="seven wide column">
-          <h4 class="ui inverted header">Movie Max</h4>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+
+{#</div>#}
 
 {% endblock %}

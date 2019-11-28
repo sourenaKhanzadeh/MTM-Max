@@ -1,0 +1,339 @@
+{% extends 'header.html' %}
+
+{% block body %}
+    <form class="ui form"
+          action="/{{ user }}/admin" method="post"
+    style="margin: 100px">
+  <h4 class="ui dividing header">Add Product</h4>
+  <div class="field">
+    <label>Name</label>
+      <div class="field">
+        <input type="text" name="name" placeholder="Name">
+      </div>
+  </div>
+  <div class="field">
+    <label>Length</label>
+    <div class="fields">
+      <div class="twelve wide field">
+        <input type="number" name="len" placeholder="Duration in minutes">
+      </div>
+
+    </div>
+  </div>
+  <div class="two fields">
+    <div class="field">
+      <label>Type</label>
+      <select class="ui fluid dropdown" name="type">
+        <option value="m">Movie</option>
+    <option value="t">Tv Series</option>
+    <option value="s">Music</option>
+      </select>
+    </div>
+    <div class="field">
+      <label>Country</label>
+        <select class="ui fluid dropdown" name="country">
+            <option class="item" value="af">Afghanistan</option>
+    <option class="item" value="ax">Aland Islands</option>
+    <option class="item" value="al">Albania</option>
+    <option class="item" value="dz">Algeria</option>
+    <option class="item" value="as">American Samoa</option>
+    <option class="item" value="ad">Andorra</option>
+    <option class="item" value="ao">Angola</option>
+    <option class="item" value="ai">Anguilla</option>
+    <option class="item" value="ag">Antigua</option>
+    <option class="item" value="ar">Argentina</option>
+    <option class="item" value="am">Armenia</option>
+    <option class="item" value="aw">Aruba</option>
+    <option class="item" value="au">Australia</option>
+    <option class="item" value="at">Austria</option>
+    <option class="item" value="az">Azerbaijan</option>
+    <option class="item" value="bs">Bahamas</option>
+    <option class="item" value="bh">Bahrain</option>
+    <option class="item" value="bd">Bangladesh</option>
+    <option class="item" value="bb">Barbados</option>
+    <option class="item" value="by">Belarus</option>
+    <option class="item" value="be">Belgium</option>
+    <option class="item" value="bz">Belize</option>
+    <option class="item" value="bj">Benin</option>
+    <option class="item" value="bm">Bermuda</option>
+    <option class="item" value="bt">Bhutan</option>
+    <option class="item" value="bo">Bolivia</option>
+    <option class="item" value="ba">Bosnia</option>
+    <option class="item" value="bw">Botswana</option>
+    <option class="item" value="bv">Bouvet Island</option>
+    <option class="item" value="br">Brazil</option>
+    <option class="item" value="vg">British Virgin Islands</option>
+    <option class="item" value="bn">Brunei</option>
+    <option class="item" value="bg">Bulgaria</option>
+    <option class="item" value="bf">Burkina Faso</option>
+    <option class="item" value="mm">Burma</option>
+    <option class="item" value="bi">Burundi</option>
+    <option class="item" value="tc">Caicos Islands</option>
+    <option class="item" value="kh">Cambodia</option>
+    <option class="item" value="cm">Cameroon</option>
+    <option class="item" value="ca">Canada</option>
+    <option class="item" value="cv">Cape Verde</option>
+    <option class="item" value="ky">Cayman Islands</option>
+    <option class="item" value="cf">Central African Republic</option>
+    <option class="item" value="td">Chad</option>
+    <option class="item" value="cl">Chile</option>
+    <option class="item" value="cn">China</option>
+    <option class="item" value="cx">Christmas Island</option>
+    <option class="item" value="cc">Cocos Islands</option>
+    <option class="item" value="co">Colombia</option>
+    <option class="item" value="km">Comoros</option>
+    <option class="item" value="cg">Congo Brazzaville</option>
+    <option class="item" value="cd">Congo</option>
+    <option class="item" value="ck">Cook Islands</option>
+    <option class="item" value="cr">Costa Rica</option>
+    <option class="item" value="ci">Cote Divoire</option>
+    <option class="item" value="hr">Croatia</option>
+    <option class="item" value="cu">Cuba</option>
+    <option class="item" value="cy">Cyprus</option>
+    <option class="item" value="cz">Czech Republic</option>
+    <option class="item" value="dk">Denmark</option>
+    <option class="item" value="dj">Djibouti</option>
+    <option class="item" value="dm">Dominica</option>
+    <option class="item" value="do">Dominican Republic</option>
+    <option class="item" value="ec">Ecuador</option>
+    <option class="item" value="eg">Egypt</option>
+    <option class="item" value="sv">El Salvador</option>
+    <option class="item" value="gb">England</option>
+    <option class="item" value="gq">Equatorial Guinea</option>
+    <option class="item" value="er">Eritrea</option>
+    <option class="item" value="ee">Estonia</option>
+    <option class="item" value="et">Ethiopia</option>
+    <option class="item" value="eu">European Union</option>
+    <option class="item" value="fk">Falkland Islands</option>
+    <option class="item" value="fo">Faroe Islands</option>
+    <option class="item" value="fj">Fiji</option>
+    <option class="item" value="fi">Finland</option>
+    <option class="item" value="fr">France</option>
+    <option class="item" value="gf">French Guiana</option>
+    <option class="item" value="pf">French Polynesia</option>
+    <option class="item" value="tf">French Territories</option>
+    <option class="item" value="ga">Gabon</option>
+    <option class="item" value="gm">Gambia</option>
+    <option class="item" value="ge">Georgia</option>
+    <option class="item" value="de">Germany</option>
+    <option class="item" value="gh">Ghana</option>
+    <option class="item" value="gi">Gibraltar</option>
+    <option class="item" value="gr">Greece</option>
+    <option class="item" value="gl">Greenland</option>
+    <option class="item" value="gd">Grenada</option>
+    <option class="item" value="gp">Guadeloupe</option>
+    <option class="item" value="gu">Guam</option>
+    <option class="item" value="gt">Guatemala</option>
+    <option class="item" value="gw">Guinea-Bissau</option>
+    <option class="item" value="gn">Guinea</option>
+    <option class="item" value="gy">Guyana</option>
+    <option class="item" value="ht">Haiti</option>
+    <option class="item" value="hm">Heard Island</option>
+    <option class="item" value="hn">Honduras</option>
+    <option class="item" value="hk">Hong Kong</option>
+    <option class="item" value="hu">Hungary</option>
+    <option class="item" value="is">Iceland</option>
+    <option class="item" value="in">India</option>
+    <option class="item" value="io">Indian Ocean Territory</option>
+    <option class="item" value="id">Indonesia</option>
+    <option class="item" value="ir">Iran</option>
+    <option class="item" value="iq">Iraq</option>
+    <option class="item" value="ie">Ireland</option>
+    <option class="item" value="il">Israel</option>
+    <option class="item" value="it">Italy</option>
+    <option class="item" value="jm">Jamaica</option>
+    <option class="item" value="jp">Japan</option>
+    <option class="item" value="jo">Jordan</option>
+    <option class="item" value="kz">Kazakhstan</option>
+    <option class="item" value="ke">Kenya</option>
+    <option class="item" value="ki">Kiribati</option>
+    <option class="item" value="kw">Kuwait</option>
+    <option class="item" value="kg">Kyrgyzstan</option>
+    <option class="item" value="la">Laos</option>
+    <option class="item" value="lv">Latvia</option>
+    <option class="item" value="lb">Lebanon</option>
+    <option class="item" value="ls">Lesotho</option>
+    <option class="item" value="lr">Liberia</option>
+    <option class="item" value="ly">Libya</option>
+    <option class="item" value="li">Liechtenstein</option>
+    <option class="item" value="lt">Lithuania</option>
+    <option class="item" value="lu">Luxembourg</option>
+    <option class="item" value="mo">Macau</option>
+    <option class="item" value="mk">Macedonia</option>
+    <option class="item" value="mg">Madagascar</option>
+    <option class="item" value="mw">Malawi</option>
+    <option class="item" value="my">Malaysia</option>
+    <option class="item" value="mv">Maldives</option>
+    <option class="item" value="ml">Mali</option>
+    <option class="item" value="mt">Malta</option>
+    <option class="item" value="mh">Marshall Islands</option>
+    <option class="item" value="mq">Martinique</option>
+    <option class="item" value="mr">Mauritania</option>
+    <option class="item" value="mu">Mauritius</option>
+    <option class="item" value="yt">Mayotte</option>
+    <option class="item" value="mx">Mexico</option>
+    <option class="item" value="fm">Micronesia</option>
+    <option class="item" value="md">Moldova</option>
+    <option class="item" value="mc">Monaco</option>
+    <option class="item" value="mn">Mongolia</option>
+    <option class="item" value="me">Montenegro</option>
+    <option class="item" value="ms">Montserrat</option>
+    <option class="item" value="ma">Morocco</option>
+    <option class="item" value="mz">Mozambique</option>
+    <option class="item" value="na">Namibia</option>
+    <option class="item" value="nr">Nauru</option>
+    <option class="item" value="np">Nepal</option>
+    <option class="item" value="an">Netherlands Antilles</option>
+    <option class="item" value="nl">Netherlands</option>
+    <option class="item" value="nc">New Caledonia</option>
+    <option class="item" value="pg">New Guinea</option>
+    <option class="item" value="nz">New Zealand</option>
+    <option class="item" value="ni">Nicaragua</option>
+    <option class="item" value="ne">Niger</option>
+    <option class="item" value="ng">Nigeria</option>
+    <option class="item" value="nu">Niue</option>
+    <option class="item" value="nf">Norfolk Island</option>
+    <option class="item" value="kp">North Korea</option>
+    <option class="item" value="mp">Northern Mariana Islands</option>
+    <option class="item" value="no">Norway</option>
+    <option class="item" value="om">Oman</option>
+    <option class="item" value="pk">Pakistan</option>
+    <option class="item" value="pw">Palau</option>
+    <option class="item" value="ps">Palestine</option>
+    <option class="item" value="pa">Panama</option>
+    <option class="item" value="py">Paraguay</option>
+    <option class="item" value="pe">Peru</option>
+    <option class="item" value="ph">Philippines</option>
+    <option class="item" value="pn">Pitcairn Islands</option>
+    <option class="item" value="pl">Poland</option>
+    <option class="item" value="pt">Portugal</option>
+    <option class="item" value="pr">Puerto Rico</option>
+    <option class="item" value="qa">Qatar</option>
+    <option class="item" value="re">Reunion</option>
+    <option class="item" value="ro">Romania</option>
+    <option class="item" value="ru">Russia</option>
+    <option class="item" value="rw">Rwanda</option>
+    <option class="item" value="sh">Saint Helena</option>
+    <option class="item" value="kn">Saint Kitts and Nevis</option>
+    <option class="item" value="lc">Saint Lucia</option>
+    <option class="item" value="pm">Saint Pierre</option>
+    <option class="item" value="vc">Saint Vincent</option>
+    <option class="item" value="ws">Samoa</option>
+    <option class="item" value="sm">San Marino</option>
+    <option class="item" value="gs">Sandwich Islands</option>
+    <option class="item" value="st">Sao Tome</option>
+    <option class="item" value="sa">Saudi Arabia</option>
+    <option class="item" value="sn">Senegal</option>
+    <option class="item" value="cs">Serbia</option>
+    <option class="item" value="rs">Serbia</option>
+    <option class="item" value="sc">Seychelles</option>
+    <option class="item" value="sl">Sierra Leone</option>
+    <option class="item" value="sg">Singapore</option>
+    <option class="item" value="sk">Slovakia</option>
+    <option class="item" value="si">Slovenia</option>
+    <option class="item" value="sb">Solomon Islands</option>
+    <option class="item" value="so">Somalia</option>
+    <option class="item" value="za">South Africa</option>
+    <option class="item" value="kr">South Korea</option>
+    <option class="item" value="es">Spain</option>
+    <option class="item" value="lk">Sri Lanka</option>
+    <option class="item" value="sd">Sudan</option>
+    <option class="item" value="sr">Suriname</option>
+    <option class="item" value="sj">Svalbard</option>
+    <option class="item" value="sz">Swaziland</option>
+    <option class="item" value="se">Sweden</option>
+    <option class="item" value="ch">Switzerland</option>
+    <option class="item" value="sy">Syria</option>
+    <option class="item" value="tw">Taiwan</option>
+    <option class="item" value="tj">Tajikistan</option>
+    <option class="item" value="tz">Tanzania</option>
+    <option class="item" value="th">Thailand</option>
+    <option class="item" value="tl">Timorleste</option>
+    <option class="item" value="tg">Togo</option>
+    <option class="item" value="tk">Tokelau</option>
+    <option class="item" value="to">Tonga</option>
+    <option class="item" value="tt">Trinidad</option>
+    <option class="item" value="tn">Tunisia</option>
+    <option class="item" value="tr">Turkey</option>
+    <option class="item" value="tm">Turkmenistan</option>
+    <option class="item" value="tv">Tuvalu</option>
+    <option class="item" value="ug">Uganda</option>
+    <option class="item" value="ua">Ukraine</option>
+    <option class="item" value="ae">United Arab Emirates</option>
+    <option class="item" value="us">United States</option>
+    <option class="item" value="uy">Uruguay</option>
+    <option class="item" value="um">Us Minor Islands</option>
+    <option class="item" value="vi">Us Virgin Islands</option>
+    <option class="item" value="uz">Uzbekistan</option>
+    <option class="item" value="vu">Vanuatu</option>
+    <option class="item" value="va">Vatican City</option>
+    <option class="item" value="ve">Venezuela</option>
+    <option class="item" value="vn">Vietnam</option>
+    <option class="item" value="wf">Wallis and Futuna</option>
+    <option class="item" value="eh">Western Sahara</option>
+    <option class="item" value="ye">Yemen</option>
+    <option class="item" value="zm">Zambia</option>
+    <option class="item" value="zw">Zimbabwe</option>
+  </select>
+       </div>
+    </div>
+
+  <h4 class="ui dividing header">Other Info</h4>
+  <div class="field">
+    <label for="des">Description</label>
+    <textarea name="des"></textarea>
+  </div>
+
+  <div class="fields">
+    <div class="seven wide field">
+      <label>Sell Price</label>
+      <input type="number" name="price" step=".01"
+             maxlength="16" placeholder="$0.00">
+    </div>
+    <div class="three wide field">
+      <label>Genre</label>
+      <input type="text" name="genre" placeholder="ex.Action">
+    </div>
+    <div class="six wide field">
+      <label>Release Date</label>
+      <div class="two fields">
+        <div class="field">
+          <select class="ui fluid search dropdown" name="month">
+            <option value="">Month</option>
+            <option value="01">January</option>
+            <option value="02">February</option>
+            <option value="03">March</option>
+            <option value="04">April</option>
+            <option value="05">May</option>
+            <option value="06">June</option>
+            <option value="07">July</option>
+            <option value="08">August</option>
+            <option value="09">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </select>
+        </div>
+        <div class="field">
+          <input type="text" name="year" maxlength="4" placeholder="Year">
+        </div>
+      </div>
+    </div>
+  </div>
+   <h4 class="ui dividing header">Rating</h4>
+   <div class="six wide field">
+       <div class="two fields">
+            <div class="field">
+                <label for="rating">Maturity Rating</label>
+                <input type="text" name="rating" placeholder="ex.PG">
+            </div>
+            <div class="field">
+                <label for="rating">Rotten Tomato Rating <i class="star icon"></i></label>
+                <input type="text" name="tomato" placeholder="ex.95%">
+            </div>
+       </div>
+   </div>
+
+  <input type="submit" class="ui button" tabindex="0" value="Add Product">
+</form>
+{% endblock %}

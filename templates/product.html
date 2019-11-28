@@ -1,0 +1,58 @@
+{% extends 'header.html' %}
+
+{% block body %}
+    {% if prod %}
+    <h1>Products</h1>
+    <div class="ui grid">
+    {% for _, name, __, _a , __a, ___a, _a_, rate, date, _Asd_, image  in query %}
+        <div class="four wide column">
+        <div class="ui card">
+          <div class="image">
+            <img src="{{ image }}">
+          </div>
+          <div class="content">
+            <a class="header">{{ name }}</a>
+            <div class="meta">
+              <span class="date">{{ date }}</span>
+            </div>
+          </div>
+            <a class="ui primary inverted button"
+               href="/{{ user }}/products/{{ name }}">view</a>
+          <div class="extra content">
+            <a>
+              <i class="star icon"></i>
+              {{ rate }}
+            </a>
+         </div>
+    </div>
+    </div>
+    {% endfor %}
+    </div>
+        {% else %}
+    <div class="ui centered card">
+      <div class="image">
+        <img src="{{ query[-1] }}">
+      </div>
+      <div class="content">
+        <a class="header">{{ query[1] }}  <i class="{{ query[-2] }} flag"></i></a>
+        <div class="meta">
+              <span class="date">{{ query[-3] }}</span>
+            <span class="right floated">{{ query[6] }}</span>
+        </div>
+          <div class="description">
+      {{ query[3] }}
+    </div>
+      </div>
+    <div class="extra content">
+            <a>
+                <span class="right floated">
+                {{ query[4] }}
+              </span>
+              <i class="star icon"></i>
+              {{ query[-4] }}
+            </a>
+         </div>
+    </div>
+        <h1 class="ui centered" style="margin: 30px">${{ query[5] }}</h1>
+    {% endif %}
+{% endblock %}

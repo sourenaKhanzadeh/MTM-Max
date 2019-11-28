@@ -45,7 +45,9 @@ if len(tables) == 0:
         SellPrice FLOAT NOT NULL,
         MaturityRating VARCHAR(10),
         RottenTomatoRating VARCHAR(10),
-        ReleaseDate  DATE
+        ReleaseDate  DATE,
+        Country VARCHAR(50),
+        Image VARCHAR (300)
     )
     """)
 
@@ -55,7 +57,6 @@ if len(tables) == 0:
         Movie_Cast VARCHAR(100),
         Languages VARCHAR(100),
         Director VARCHAR(50),
-        Country VARCHAR(50)	
     )
     """)
 
@@ -152,3 +153,15 @@ def checkUserExists(userId):
     """.format(userId))
 
     return cursor.fetchone()
+
+
+def insertPorduct(args):
+    product_id = random.randint(10000, 9999999)
+    cursor.execute("""
+        INSERT INTO product(ProductID, Name, Length, Description, 
+        Genre, SellPrice,
+        MaturityRating,RottenTomatoRating,
+        ReleaseDate,Country, Image)VALUES(%s, %s, %s, %s, %s,%s,%s,%s,%s,%s,%s)
+    """, (product_id, ) + args)
+    db.commit()
+    return product_id

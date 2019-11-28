@@ -5,7 +5,8 @@ from flask import redirect
 from flask import flash
 from flask import Session
 from flask import send_from_directory
-from database import cursor,db, insertUser, checkUserExists
+from database import cursor,db, insertUser, checkUserExists,insertPorduct
+from poster import Poster
 import os
 
 SESSION_TYPE = 'memcache'
@@ -23,10 +24,10 @@ def home():
         admin = typeUser[1]
         if exist and admin:
             flash("Welcome admin, {}".format(user), category='success')
-            return render_template('homepage.html', admin=True, user=user)
+            return render_template('homepage.html', header=True, admin=True, user=user)
         elif exist:
             flash("Welcome user, {}".format(user))
-            return render_template('homepage.html', admin=False, user=user)
+            return render_template('homepage.html', header=True, admin=False, user=user)
         else:
             flash("Failure: Login was a failure", category='error')
             return redirect('/?login=fail')
@@ -42,14 +43,66 @@ def create_member(member):
         admin = True if member == 'admin' else False
         insertUser(form["fname"], form["lname"], form["email"], form["username"],
                    admin=admin)
-        print("User Created....")
+        flash("User Created....")
         return render_template('sign_up.html', mem=member)
 
 
-@app.route('/<user>/admin', methods=['GET'])
+@app.route('/<user>/products', methods=['GET', 'POST'])
+def product(user):
+    cursor.execute("SELECT * FROM product")
+    return render_template('product.html',user=user,
+                           header=True, query=cursor.fetchall(), prod=True)
+
+@app.route('/<user>/products/<product>', methods=['GET', 'POST'])
+def get_product(user, product):
+    cursor.execute("SELECT * FROM product WHERE Name='{}'".format(product))
+    p = cursor.fetchone()
+    print(p)
+    return render_template('product.html', user=user,
+                           header=True, query=p, prod=False)
+
+@app.route('/<user>/admin', methods=['GET', 'POST'])
 def login(user):
     if request.method == "GET" and checkUserExists(user)[1]:
-        return 'hello admin'
+        return render_template('admin.html',
+                               header=True,
+                               click_a=True,
+                               admin=True,
+                               user=user)
+    elif request.method == "POST":
+        form = request.form
+
+        year = '{1}-{0}-01'.format(form['month'], form['year'])
+        poster = Poster(form['name'])
+
+        vals = (form['name'], int(form['len']),form['des'],
+                form['genre'],float(form['price']), form['rating'],
+                form['tomato'], year, form['country'])
+
+        vals += str(poster.poster_path()),
+
+        print(vals)
+        product_id = insertPorduct(vals)
+
+        if form['type'] == 'm':
+            cursor.execute("""
+            INSERT INTO movie(MovieID)VALUES({})
+            """.format(product_id))
+        elif form['type'] == 't':
+            cursor.execute("""
+                        INSERT INTO tvseries(SeriesID)VALUES({})
+                        """.format(product_id))
+        else:
+            cursor.execute("""
+                    INSERT INTO music(SongID)VALUES({})
+                    """.format(product_id))
+        db.commit()
+        flash("Product Added!!")
+        return render_template('admin.html',
+                               header=True,
+                               click_a=True,
+                               admin=True,
+                               user=user)
     else:
         flash("Page does not exist", category='error')
         redirect('/')
