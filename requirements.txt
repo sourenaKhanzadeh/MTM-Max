@@ -16,7 +16,7 @@ Flask==1.0.3
 Flask-SocketIO==4.1.0
 folium==0.10.0
 gunicorn==19.9.0
-httplib2==0.13.1
+httplib2==0.18.0
 idna==2.8
 ipython==7.7.0
 ipython-genutils==0.2.0
